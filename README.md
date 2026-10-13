@@ -2,6 +2,10 @@
 
 Practice project built to learn how to consume a REST API from a modern React front-end, using TypeScript, Vite and shadcn/ui.
 
+It fetches the 151 first-generation Pokémon from the [PokéAPI](https://pokeapi.co/) and displays them in a searchable grid of cards.
+
+<!-- TODO: add a screenshot or GIF, e.g. ![vitedex screenshot](docs/screenshot.png) -->
+
 ---
 
 ## 📌 About the Project
@@ -16,6 +20,17 @@ It also served as a way to practice:
 
 ---
 
+## ✨ Features
+
+- Loads the list of the **151 first-generation Pokémon** from the PokéAPI (`/api/v2/pokemon?limit=151&offset=0`)
+- **Real-time search** by name, case-insensitive
+- **Responsive card grid** that goes from 1 to 4 columns depending on the screen size
+- One card component per Pokémon, which receives the Pokémon's API URL from the list
+- Loading state while the list is being fetched, and a message when no Pokémon matches the search
+- Light and dark theme styles
+
+---
+
 ## 🛠️ Technologies Used
 
 | Technology            | Usage                                        |
@@ -27,6 +42,7 @@ It also served as a way to practice:
 | **shadcn/ui + Radix** | Accessible, composable UI components         |
 | **Lucide React**      | Icons                                        |
 | **ESLint + Prettier** | Linting and code formatting                  |
+| **PokéAPI**           | REST API used as the data source             |
 
 ---
 
